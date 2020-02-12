@@ -1,15 +1,13 @@
 <template>
     <div>
-        Hello blog
+        list
     </div>
 </template>
 
 <script>
-
-export default {
-  name: 'Main',
-}
-
+    export default {
+        name: "TopicsList"
+    }
 </script>
 
 <style scoped>

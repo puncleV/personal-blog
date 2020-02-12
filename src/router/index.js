@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Main from '../components/main'
+import About from '../components/about'
+import TopicsList from '../components/topics/topics-list'
 
 Vue.use(Router)
 
@@ -8,8 +9,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Main',
-      component: Main
+      name: 'About',
+      component: About
+    },
+    {
+      path: '/topics',
+      name: 'Topics',
+      component: TopicsList
     }
   ]
 })
