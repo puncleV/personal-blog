@@ -1,7 +1,8 @@
 <template>
 <div>
-    <div>1</div>
-    <div>2</div>
+    <div>Home</div>
+    <div>Blog</div>
+    <div>About</div>
 </div>
 </template>
 
