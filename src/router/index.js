@@ -15,7 +15,7 @@ export default new Router({
     },
     {
       path: '/blog',
-      name: 'Topics',
+      name: 'Blog',
       component: TopicsList
     },
     {

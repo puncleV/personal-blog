@@ -1,17 +1,13 @@
 <template>
     <header>
-        <div
+        <router-link
                 v-for="element in elements"
-                @click="$router.push({
-                    name: element.routeName
-                })"
-                v-bind:class="{
-                    active: $router.currentRoute.name === element.routeName
-                }"
+                :to = "{name: element.routeName}"
+                active-class="active"
                 class='header-element'
         >
             {{element.name}}
-        </div>
+        </router-link>
     </header>
 </template>
 
@@ -38,5 +34,23 @@
 </script>
 
 <style scoped>
+    header {
+        display: flex;
+        justify-content: center;
+        height: 3rem;
+        background-color: #b356ff;
+    }
 
+    .header-element {
+        margin: 0 5px;
+        font-size: 2rem;
+        text-transform: uppercase;
+        line-height: 3rem;
+        color: black;
+        text-decoration: none;
+    }
+
+    .header-element.active {
+        opacity: 0.55;
+    }
 </style>
