@@ -1,7 +1,12 @@
 <template>
     <div class="topic-preview">
         <div class="header">
-            <router-link tag="div" class='title' :to="'sdas'">{{topic.title}}</router-link>
+            <router-link tag="div" class='title' :to="{
+                name: 'Topic',
+                params: {
+                    id: topic.id
+                }
+            }">{{topic.title}}</router-link>
             <div class="time">
                 {{topic.published | publishedFormat}}
             </div>

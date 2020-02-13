@@ -1,14 +1,16 @@
 <template>
     <div class="topic-list">
         <topic-preview v-for="topic in topics" v-bind:topic="topic"></topic-preview>
+        <take-me-to-the-top></take-me-to-the-top>
     </div>
 </template>
 <script>
     import TopicPreview from "./topic-preview";
+    import TakeMeToTheTop from "../take-me-to-the-top";
 
     export default {
         name: "TopicsList",
-        components: {TopicPreview},
+        components: {TakeMeToTheTop, TopicPreview},
         created() {
           this.topics = Array(20).fill().map((t, i) => ({
               id: i,
