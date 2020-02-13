@@ -2,7 +2,7 @@
     <header>
         <router-link
                 v-for="element in elements"
-                :to = "{name: element.routeName}"
+                :to="{name: element.routeName}"
                 class='header-element'
         >
             {{element.name}}

@@ -1,7 +1,7 @@
 <template>
     <div id="app" class="app">
         <app-header></app-header>
-        <router-view/>
+        <router-view class="body"/>
     </div>
 </template>
 
@@ -18,5 +18,6 @@ export default {
 <style lang="css">
     .app {
         background-color: #f2f3f8;
+        height: 100%;
     }
 </style>
