@@ -46,7 +46,6 @@
     .topic {
         display: flex;
         justify-content: center;
-        height: 100%;
         color: #74788d;
     }
 
