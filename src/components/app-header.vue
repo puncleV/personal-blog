@@ -3,7 +3,6 @@
         <router-link
                 v-for="element in elements"
                 :to = "{name: element.routeName}"
-                active-class="active"
                 class='header-element'
         >
             {{element.name}}
@@ -50,7 +49,7 @@
         text-decoration: none;
     }
 
-    .header-element.active {
+    .header-element.router-link-exact-active {
         opacity: 0.55;
     }
 </style>
