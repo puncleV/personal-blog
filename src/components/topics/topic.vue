@@ -6,10 +6,8 @@
                 <h3>time</h3>
             </div>
             <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae condimentum erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae condimentum erat. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae condimentum erat. Interdum et malesuada fames ac ante ipsum primis in faucibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae condimentum erat. Interdum et malesuada fames ac ante ipsum primis in faucibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae condimentum erat. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae condimentum erat. Interdum et malesuada fames ac ante ipsum primis in faucibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae condimentum erat. Interdum et malesuada fames ac ante ipsum primis in faucibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae condimentum erat. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae condimentum erat. Interdum et malesuada fames ac ante ipsum primis in faucibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae condimentum erat. Interdum et malesuada fames ac ante ipsum primis in faucibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae condimentum erat. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                <vue-simple-markdown :source="datat">
+                </vue-simple-markdown>
             </div>
         </div>
     </div>
@@ -17,7 +15,26 @@
 
 <script>
     export default {
-        name: "topic"
+        name: "topic",
+        data: () => ({
+            datat: '``` javascript\n' +
+                'var foo = function (bar) {\n' +
+                '  return bar++;\n' +
+                '};\n' +
+                '\n' +
+                'console.log(foo(5));\n' +
+                '```\n' +
+                '\n' +
+                '``` go\n' +
+                'package main\n' +
+                '\n' +
+                'import "fmt"\n' +
+                '\n' +
+                'func main() {\n' +
+                '\tfmt.Println("Hello, world!")\n' +
+                '}\n' +
+                '```'
+        })
     }
 </script>
 
