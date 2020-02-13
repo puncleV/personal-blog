@@ -12,7 +12,7 @@
         created() {
           this.topics = Array(20).fill().map((t, i) => ({
               id: i,
-              title: `TiTlE ${i}`,
+              title: `TiTlE ${i} Lorem ipsum dolor `,
               published: new Date(),
               preview: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae condimentum erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent tempor, erat mollis tincidunt tempus, leo nisl posuere massa, non porta quam velit ac ante. Proin nec orci risus. Vivamus luctus lacinia ligula. Cras in pretium libero, sollicitudin mattis nisl. Aenean sodales tristique ex quis tempor. Nam blandit ante ut dui fringilla malesuada. Nulla at bibendum sem. Morbi congue nec justo sit amet viverra. Quisque vestibulum dictum ipsum eu pulvinar.\n' +
                   '\n' +

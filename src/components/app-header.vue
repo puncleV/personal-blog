@@ -37,7 +37,7 @@
         display: flex;
         justify-content: center;
         height: 3rem;
-        background-color: #b356ff;
+        background-color: #242939;
     }
 
     .header-element {
@@ -45,11 +45,11 @@
         font-size: 2rem;
         text-transform: uppercase;
         line-height: 3rem;
-        color: black;
         text-decoration: none;
+        color: #646c9a;
     }
 
     .header-element.router-link-exact-active {
-        opacity: 0.55;
+        color: white;
     }
 </style>
