@@ -1,10 +1,13 @@
 <template>
-
+    <div>
+        {{text}}
+    </div>
 </template>
 
 <script>
     export default {
-        name: "topic"
+        name: "topic",
+        props: ['text'],
     }
 </script>
 
