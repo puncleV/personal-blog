@@ -36,15 +36,15 @@
     header {
         display: flex;
         justify-content: center;
-        height: 3rem;
+        height: 4rem;
         background-color: #242939;
     }
 
     .header-element {
         margin: 0 5px;
-        font-size: 2rem;
+        font-size: 3rem;
         text-transform: uppercase;
-        line-height: 3rem;
+        line-height: 4rem;
         text-decoration: none;
         color: #646c9a;
     }
