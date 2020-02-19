@@ -1,7 +1,11 @@
 <template>
-    <div class="topic-list">
-        <topic-preview v-for="topic in topics" v-bind:topic="topic"></topic-preview>
-        <take-me-to-the-top></take-me-to-the-top>
+    <div class="v-box">
+        <div class="content">
+            <div class="v-box">
+                <topic-preview v-for="topic in topics" v-bind:topic="topic"></topic-preview>
+                <take-me-to-the-top></take-me-to-the-top>
+            </div>
+        </div>
     </div>
 </template>
 <script>
@@ -29,10 +33,4 @@
 </script>
 
 <style scoped>
-    .topic-list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
 </style>

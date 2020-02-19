@@ -50,10 +50,6 @@
 </script>
 
 <style scoped>
-    .header {
-
-    }
-
     .topic {
         display: flex;
         justify-content: center;
@@ -61,8 +57,7 @@
     }
 
     .topic-body {
-        width: 70%;
-        min-width: 450px;
+        max-width: 70rem;
         text-align: justify;
         background-color: white;
         padding: 20px;

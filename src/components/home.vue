@@ -1,7 +1,7 @@
 <template>
-    <div class="home">
-        <div class="about">
-            <div>
+    <div class="v-box">
+        <div class="content">
+            <div class="v-box">
                 <h1>Hello visitor!</h1>
                 <p>
                     My name is Viktor, I am software engineer. This is my personal blog where I am going to share with you anything I want and have time to write about.
@@ -10,7 +10,6 @@
                         name: 'About'
                     }">Continue...</router-link>
                 </p>
-
             </div>
         </div>
         <topics-list></topics-list>
@@ -35,15 +34,9 @@ export default {
     }
 
     .about {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about > div {
-        width: calc(40% + 40px);
+        max-width: 60rem;
         text-align: justify;
+        padding: 0 2rem;
     }
 
     h1 {

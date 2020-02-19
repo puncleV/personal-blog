@@ -32,7 +32,6 @@
 <style scoped>
     .topic-preview {
         min-width: 300px;
-        width: 40%;
         margin: 10px 0;
         padding: 20px;
         vertical-align: bottom;

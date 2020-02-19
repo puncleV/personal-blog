@@ -20,4 +20,16 @@ export default {
         background-color: #f2f3f8;
         min-height: 100%;
     }
+
+    .v-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        max-width: 60rem;
+        text-align: justify;
+        padding: 0 2rem;
+    }
 </style>
