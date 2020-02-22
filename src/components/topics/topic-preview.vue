@@ -11,15 +11,18 @@
                 {{topic.published | publishedFormat}}
             </div>
         </div>
+        <tags></tags>
         <div class="preview">{{topic.preview}}</div>
     </div>
 </template>
 
 <script>
     import moment from 'moment';
+    import Tags from "./tags";
 
     export default {
         name: "topic-preview",
+        components: {Tags},
         props: ['topic'],
         filters: {
             publishedFormat: (value) => {

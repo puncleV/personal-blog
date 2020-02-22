@@ -4,6 +4,7 @@
             <div class="header">
                 <h1>{{title}}</h1>
                 <h3>{{time | publishedFormat}}</h3>
+                <tags></tags>
             </div>
             <div>
                 <vue-simple-markdown :source="text">
@@ -17,10 +18,11 @@
 <script>
     import moment from "moment";
     import TakeMeToTheTop from "../take-me-to-the-top";
+    import Tags from "./tags";
 
     export default {
         name: "topic",
-        components: {TakeMeToTheTop},
+        components: {Tags, TakeMeToTheTop},
         data: () => ({
             text: '# h1 Heading 8-)\n' +
                 '<h2> h2 Heading by HTML</h2>\n' +
