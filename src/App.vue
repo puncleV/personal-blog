@@ -27,6 +27,11 @@ export default {
         align-items: center;
     }
 
+    .h-box {
+        display: flex;
+        align-items: flex-start;
+    }
+
     .content {
         max-width: 60rem;
         text-align: justify;
