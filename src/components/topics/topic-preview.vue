@@ -17,19 +17,19 @@
 </template>
 
 <script>
-    import moment from 'moment';
-    import Tags from "./tags";
+import moment from 'moment'
+import Tags from './tags'
 
-    export default {
-        name: "topic-preview",
-        components: {Tags},
-        props: ['topic'],
-        filters: {
-            publishedFormat: (value) => {
-                return moment(value).format('DD.MM.YYYY HH:mm')
-            }
-        }
+export default {
+  name: 'topic-preview',
+  components: { Tags },
+  props: ['topic'],
+  filters: {
+    publishedFormat: (value) => {
+      return moment(value).format('DD.MM.YYYY HH:mm')
     }
+  }
+}
 </script>
 
 <style scoped>
