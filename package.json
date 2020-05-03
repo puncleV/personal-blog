@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx parcel index.html",
-    "build": "npx parcel build index.html"
+    "build": "npx parcel build index.html",
+    "lint": "eslint . --fix --ext .vue"
   },
   "author": "Kozlov Viktor (punkkk)",
   "license": "MIT",

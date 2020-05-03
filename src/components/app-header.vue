@@ -4,6 +4,7 @@
                 v-for="element in elements"
                 :to="{name: element.routeName}"
                 class='header-element'
+                :key="element.routeName"
         >
             {{element.name}}
         </router-link>
@@ -11,25 +12,25 @@
 </template>
 
 <script>
-    export default {
-        name: "app-header",
-        data: () => ({
-            elements: [
-                {
-                    name: 'Home',
-                    routeName: 'Home',
-                },
-                {
-                    name: 'Blog',
-                    routeName: 'Blog',
-                },
-                {
-                    name: 'About',
-                    routeName: 'About',
-                }
-            ]
-        })
-    }
+export default {
+  name: 'app-header',
+  data: () => ({
+    elements: [
+      {
+        name: 'Home',
+        routeName: 'Home'
+      },
+      {
+        name: 'Blog',
+        routeName: 'Blog'
+      },
+      {
+        name: 'About',
+        routeName: 'About'
+      }
+    ]
+  })
+}
 </script>
 
 <style scoped>

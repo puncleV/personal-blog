@@ -18,10 +18,10 @@
 
 <script>
 
-import TopicsList from "./topics/topics-list";
+import TopicsList from './topics/topics-list'
 export default {
   name: 'Home',
-    components: {TopicsList},
+  components: { TopicsList }
 }
 
 </script>

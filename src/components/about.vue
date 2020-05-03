@@ -49,11 +49,9 @@
 
 <script>
 
-  import TopicsList from "./topics/topics-list";
-  export default {
-    name: 'Home',
-    components: {TopicsList},
-  }
+export default {
+  name: 'Home'
+}
 
 </script>
 

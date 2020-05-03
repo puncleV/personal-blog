@@ -1,18 +1,18 @@
 <template>
     <div class="h-box">
-        <div class="tag" v-for="tag of tags">{{tag.name}}</div>
+        <div class="tag" v-for="tag of tags" :key="tag.name">{{tag.name}}</div>
     </div>
 </template>
 
 <script>
-    export default {
-        name: "tags",
-        data: () => ({
-            tags: new Array(~~(Math.random() * 5)).fill().map((o, i) => ({
-                name: `tag ${i}`
-            }))
-        })
-    }
+export default {
+  name: 'tags',
+  data: () => ({
+    tags: new Array(~~(Math.random() * 5)).fill().map((o, i) => ({
+      name: `tag ${i}`
+    }))
+  })
+}
 </script>
 
 <style scoped>

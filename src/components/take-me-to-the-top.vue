@@ -10,27 +10,27 @@
 </template>
 
 <script>
-    export default {
-        name: "take-me-to-the-top",
-        mounted() {
-            window.addEventListener("scroll", this.onScroll)
-        },
-        beforeDestroy() {
-            window.removeEventListener("scroll", this.onScroll)
-        },
-        methods: {
-            takeMeToTheTop: () => {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            },
-            onScroll(e) {
-                this.windowTop = window.top.scrollY /* or: e.target.documentElement.scrollTop */
-            }
-        },
-        data: () => ({
-            windowTop: window.top.scrollY
-        })
+export default {
+  name: 'take-me-to-the-top',
+  mounted () {
+    window.addEventListener('scroll', this.onScroll)
+  },
+  beforeDestroy () {
+    window.removeEventListener('scroll', this.onScroll)
+  },
+  methods: {
+    takeMeToTheTop: () => {
+      document.body.scrollTop = 0
+      document.documentElement.scrollTop = 0
+    },
+    onScroll (e) {
+      this.windowTop = window.top.scrollY /* or: e.target.documentElement.scrollTop */
     }
+  },
+  data: () => ({
+    windowTop: window.top.scrollY
+  })
+}
 </script>
 
 <style scoped>
