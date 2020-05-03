@@ -16,15 +16,15 @@
 </template>
 
 <script>
-    import moment from "moment";
-    import TakeMeToTheTop from "../take-me-to-the-top";
-    import Tags from "./tags";
+import moment from 'moment'
+import TakeMeToTheTop from '../take-me-to-the-top'
+import Tags from './tags'
 
-    export default {
-        name: "topic",
-        components: {Tags, TakeMeToTheTop},
-        data: () => ({
-            text: '# h1 Heading 8-)\n' +
+export default {
+  name: 'topic',
+  components: { Tags, TakeMeToTheTop },
+  data: () => ({
+    text: '# h1 Heading 8-)\n' +
                 '<h2> h2 Heading by HTML</h2>\n' +
                 '## h2 Heading\n' +
                 '### h3 Heading\n' +
@@ -246,15 +246,15 @@
                 'It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.\n' +
                 '\n' +
                 '*[HTML]: Hyper Text Markup Language',
-            time: Date.now(),
-            title: 'Title'
-        }),
-        filters: {
-            publishedFormat: (value) => {
-                return moment(value).format('DD.MM.YYYY HH:mm')
-            }
-        }
+    time: Date.now(),
+    title: 'Title'
+  }),
+  filters: {
+    publishedFormat: (value) => {
+      return moment(value).format('DD.MM.YYYY HH:mm')
     }
+  }
+}
 </script>
 
 <style scoped>

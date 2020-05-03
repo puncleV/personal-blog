@@ -7,11 +7,10 @@
 
 <script>
 
-
-import AppHeader from "./components/app-header";
+import AppHeader from './components/app-header'
 export default {
   name: 'app',
-    components: {AppHeader},
+  components: { AppHeader }
 }
 </script>
 
