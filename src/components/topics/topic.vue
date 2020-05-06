@@ -23,11 +23,10 @@ import Tags from './tags';
 export default {
   name: 'Topic',
   components: { Tags, TakeMeToTheTop },
-  async created() {
+  created() {
     const { id } = this.$route.params;
 
     this.$store.dispatch('topics/getTopic', id);
-    this.a = await new Promise(resolve => resolve());
   },
   computed: {
     ...mapState({
