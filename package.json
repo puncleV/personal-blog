@@ -12,10 +12,10 @@
   "license": "MIT",
   "dependencies": {
     "casual-browserify": "1.5.19-2",
-    "core-js": "3.4.4",
+    "core-js": "3.6.5",
     "babel-eslint": "10.1.0",
     "highlightjs": "9.16.2",
-    "moment": "2.24.0",
+    "moment": "2.25.3",
     "vue": "2.6.11",
     "vue-hot-reload-api": "2.3.4",
     "vue-router": "3.1.6",
@@ -23,9 +23,9 @@
     "vuex": "3.3.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "4.1.0",
-    "@vue/cli-plugin-eslint": "4.1.0",
-    "@vue/cli-service": "4.1.0",
+    "@vue/cli-plugin-babel": "4.3.1",
+    "@vue/cli-plugin-eslint": "4.3.1",
+    "@vue/cli-service": "4.3.1",
     "eslint": "6.8.0",
     "eslint-config-airbnb-base": "14.1.0",
     "eslint-config-prettier": "6.11.0",
