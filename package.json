@@ -11,9 +11,10 @@
   "author": "Kozlov Viktor (punkkk)",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.19.2",
+    "babel-eslint": "10.1.0",
     "casual-browserify": "1.5.19-2",
     "core-js": "3.6.5",
-    "babel-eslint": "10.1.0",
     "highlightjs": "9.16.2",
     "moment": "2.25.3",
     "vue": "2.6.11",

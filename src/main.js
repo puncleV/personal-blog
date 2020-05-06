@@ -17,4 +17,4 @@ const DD = new Vue({
   render: h => h(App)
 });
 
-module.exports = DD;
+export default DD;

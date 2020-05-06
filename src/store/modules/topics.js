@@ -1,40 +1,40 @@
-import { topicsApi } from '../../api'
+/* eslint-disable no-param-reassign */
+import { topicsApi } from '../../api';
 
-const state = () => ({
+const topicsState = () => ({
   all: [],
   currentTopic: null
-})
+});
 
-const getters = {
-}
+const getters = {};
 
 const actions = {
-  getTopic: ({ commit }, id) => {
-    const topic = topicsApi.getOne(id)
+  getTopic: async ({ commit }, id) => {
+    const topic = await topicsApi.getOne(id);
 
-    commit('setTopic', topic)
+    commit('setTopic', topic);
   },
 
-  getTopics: ({ commit }) => {
-    const topics = topicsApi.getList()
+  getTopics: async ({ commit }) => {
+    const topics = await topicsApi.getList();
 
-    commit('setTopics', topics)
+    commit('setTopics', topics);
   }
-}
+};
 const mutations = {
   setTopic: (state, topic) => {
-    state.currentTopic = topic
+    state.currentTopic = topic;
   },
 
   setTopics: (state, topics) => {
-    state.all = topics
+    state.all = topics;
   }
-}
+};
 
 export const topics = {
   namespaced: true,
-  state,
+  state: topicsState,
   getters,
   actions,
   mutations
-}
+};
