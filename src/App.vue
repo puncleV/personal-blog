@@ -4,7 +4,19 @@
     <router-view class="body" />
   </div>
 </template>
+<style>
+@import 'https://fonts.googleapis.com/css?family=Tomorrow&display=swaps';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/default.min.css';
+@import '/node_modules/vue-simple-markdown/dist/vue-simple-markdown.css';
 
+body,
+html {
+  font-family: 'Tomorrow', sans-serif;
+  font-size: 14px;
+  margin: 0;
+  min-height: 100%;
+}
+</style>
 <script>
 import AppHeader from './components/app-header';
 
